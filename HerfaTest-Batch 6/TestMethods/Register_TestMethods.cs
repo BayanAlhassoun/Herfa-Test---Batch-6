@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TestProject1.POM;
 using HerfaTest_Batch_6.Helpers;
+using OpenQA.Selenium.DevTools.V130.Browser;
+using HerfaTest_Batch_6.AssistantMethods;
 
 namespace HerfaTest_Batch_6.TestMethods
 {
@@ -21,16 +23,9 @@ namespace HerfaTest_Batch_6.TestMethods
             ManageDriver.MaximizeDriver();
             CommonMethods.NavigateToURL(GlobalConstant.registerLink);
             Thread.Sleep(7000);
-            Register_POM register_POM = new Register_POM(ManageDriver.driver);
-            register_POM.EnterFirstName("Batool");
-            register_POM.EnterLastName("Barakat");
-            register_POM.EnterEmail("Batool94@gmail.com");
-            register_POM.EnterPhoneNumber("0784553253");
-            register_POM.EnterPassword("123456");
-            register_POM.EnterConfirmationPassword("1234546");
-            register_POM.DateOfBirth("02-02-1999");
-            register_POM.FemaleButton();
-            register_POM.ClickSubmitButton1();
+            User user = new User("Bayan", "Mohammad", "Bayan@gmail.com", "123", "123", "0783545455", "01-01-1999", Gender.Female);
+            Register_AssistantMethods.FillRegisterForm(user);
+
 
             string expectedURL = GlobalConstant.loginLink;
             string actualURL = ManageDriver.driver.Url;
@@ -38,6 +33,42 @@ namespace HerfaTest_Batch_6.TestMethods
             Assert.AreEqual(actualURL, expectedURL);
             Console.WriteLine("Test Case completed Successfully");
         }
-    
+
+        [TestMethod]
+        public void TestRegister_ConfirmationPassword()
+        {
+            ManageDriver.MaximizeDriver();
+            CommonMethods.NavigateToURL(GlobalConstant.registerLink);
+            Thread.Sleep(7000);
+            User user = new User("Bayan", "Mohammad", "Bayan@gmail.com", "123", "1234", "0783545455", "01-01-1999", Gender.Female);
+            Register_AssistantMethods.FillRegisterForm(user);
+
+            string expectedText = "bad";
+            string actualText = ManageDriver.driver.FindElement(By.XPath("//div/span[@id='confirmMessage']")).Text;
+            
+            Assert.AreEqual(expectedText, actualText);
+            Console.WriteLine("Test Case Completed Successfully");
+        }
+
+        [TestMethod]
+        public void TestRegister_InvalidPhoneNumber()
+        {
+            ManageDriver.MaximizeDriver();
+            CommonMethods.NavigateToURL(GlobalConstant.registerLink);
+            Thread.Sleep(7000);
+
+            User user = new User("Bayan", "Mohammad", "Bayan@gmail.com", "123", "123", "0785", "01-01-1999", Gender.Female);
+            Register_AssistantMethods.FillRegisterForm(user);
+
+            string expectedText = "The PhoneNumber entered is incorrect.";
+            ManageDriver.driver.FindElement(By.XPath("//div/button[@aria-label='Close']")).Click();
+            string actualText = ManageDriver.driver.FindElement(By.XPath("//div/span[.='The PhoneNumber entered is incorrect.']")).Text;
+      Assert.AreEqual(expectedText, actualText);
+            Console.WriteLine("The Test Case has been completed successfully");
+
+        }
+
+
+     
 }
 }

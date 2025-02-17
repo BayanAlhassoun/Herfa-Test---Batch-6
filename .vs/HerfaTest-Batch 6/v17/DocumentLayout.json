@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\testmethods\\login_testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\testmethods\\login_testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\assistantmethods\\register_assistantmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\assistantmethods\\register_assistantmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\testmethods\\register_testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\testmethods\\register_testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\data\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\data\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\pom\\login_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\pom\\login_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,32 +35,20 @@
       "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\helpers\\commonmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\pom\\register_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\pom\\register_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\testmethods\\register_testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\testmethods\\register_testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\testmethods\\login_testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\testmethods\\login_testmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\data\\globalconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\data\\globalconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\helpers\\managedriver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\helpers\\managedriver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\data\\globalconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\data\\globalconstant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\herfatest-batch 6.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\herfatest-batch 6.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|c:\\users\\b.alhassoun.ext\\source\\repos\\herfatest-batch 6\\herfatest-batch 6\\pom\\register_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8541696F-ABE5-49A5-A043-BA5CB1B2AE6A}|HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj|solutionrelative:herfatest-batch 6\\pom\\register_pom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,11 +58,39 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "Login_POM.cs",
+              "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\POM\\Login_POM.cs",
+              "RelativeDocumentMoniker": "HerfaTest-Batch 6\\POM\\Login_POM.cs",
+              "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\POM\\Login_POM.cs",
+              "RelativeToolTip": "HerfaTest-Batch 6\\POM\\Login_POM.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAqwFsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T08:27:58.022Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Data\\User.cs",
+              "RelativeDocumentMoniker": "HerfaTest-Batch 6\\Data\\User.cs",
+              "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Data\\User.cs",
+              "RelativeToolTip": "HerfaTest-Batch 6\\Data\\User.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T08:23:01.279Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\UnitTest1.cs",
               "RelativeDocumentMoniker": "HerfaTest-Batch 6\\UnitTest1.cs",
@@ -59,91 +99,76 @@
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T08:42:21.224Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login_POM.cs",
-              "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\POM\\Login_POM.cs",
-              "RelativeDocumentMoniker": "HerfaTest-Batch 6\\POM\\Login_POM.cs",
-              "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\POM\\Login_POM.cs",
-              "RelativeToolTip": "HerfaTest-Batch 6\\POM\\Login_POM.cs",
-              "ViewState": "AQIAAGQAAAAAAAAAAAAAAG4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T08:27:58.022Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CommonMethods.cs",
-              "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Helpers\\CommonMethods.cs",
-              "RelativeDocumentMoniker": "HerfaTest-Batch 6\\Helpers\\CommonMethods.cs",
-              "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Helpers\\CommonMethods.cs",
-              "RelativeToolTip": "HerfaTest-Batch 6\\Helpers\\CommonMethods.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Title": "Register_AssistantMethods.cs",
+              "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\AssistantMethods\\Register_AssistantMethods.cs",
+              "RelativeDocumentMoniker": "HerfaTest-Batch 6\\AssistantMethods\\Register_AssistantMethods.cs",
+              "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\AssistantMethods\\Register_AssistantMethods.cs",
+              "RelativeToolTip": "HerfaTest-Batch 6\\AssistantMethods\\Register_AssistantMethods.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBQAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T07:42:08.477Z",
+              "WhenOpened": "2025-02-17T08:35:09.668Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ManageDriver.cs",
-              "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Helpers\\ManageDriver.cs",
-              "RelativeDocumentMoniker": "HerfaTest-Batch 6\\Helpers\\ManageDriver.cs",
-              "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Helpers\\ManageDriver.cs",
-              "RelativeToolTip": "HerfaTest-Batch 6\\Helpers\\ManageDriver.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "DocumentIndex": 5,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Data\\Gender.cs",
+              "RelativeDocumentMoniker": "HerfaTest-Batch 6\\Data\\Gender.cs",
+              "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Data\\Gender.cs",
+              "RelativeToolTip": "HerfaTest-Batch 6\\Data\\Gender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T07:41:13.748Z",
+              "WhenOpened": "2025-02-17T08:12:17.184Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Register_TestMethods.cs",
               "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\TestMethods\\Register_TestMethods.cs",
               "RelativeDocumentMoniker": "HerfaTest-Batch 6\\TestMethods\\Register_TestMethods.cs",
               "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\TestMethods\\Register_TestMethods.cs",
               "RelativeToolTip": "HerfaTest-Batch 6\\TestMethods\\Register_TestMethods.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAAA0AAAAOAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T07:33:30.538Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Login_TestMethods.cs",
               "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\TestMethods\\Login_TestMethods.cs",
               "RelativeDocumentMoniker": "HerfaTest-Batch 6\\TestMethods\\Login_TestMethods.cs",
               "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\TestMethods\\Login_TestMethods.cs",
               "RelativeToolTip": "HerfaTest-Batch 6\\TestMethods\\Login_TestMethods.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAAA0AAAAOAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA8wCAAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T07:33:02.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "GlobalConstant.cs",
               "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Data\\GlobalConstant.cs",
               "RelativeDocumentMoniker": "HerfaTest-Batch 6\\Data\\GlobalConstant.cs",
               "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Data\\GlobalConstant.cs",
               "RelativeToolTip": "HerfaTest-Batch 6\\Data\\GlobalConstant.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T07:25:39.485Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Register_POM.cs",
               "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\POM\\Register_POM.cs",
               "RelativeDocumentMoniker": "HerfaTest-Batch 6\\POM\\Register_POM.cs",
@@ -151,20 +176,45 @@
               "RelativeToolTip": "HerfaTest-Batch 6\\POM\\Register_POM.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAACEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T06:54:40.185Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T06:54:40.185Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "HerfaTest-Batch 6.csproj",
               "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj",
               "RelativeDocumentMoniker": "HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj",
               "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj",
               "RelativeToolTip": "HerfaTest-Batch 6\\HerfaTest-Batch 6.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwBUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-02-11T06:43:23.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ManageDriver.cs",
+              "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Helpers\\ManageDriver.cs",
+              "RelativeDocumentMoniker": "HerfaTest-Batch 6\\Helpers\\ManageDriver.cs",
+              "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Helpers\\ManageDriver.cs",
+              "RelativeToolTip": "HerfaTest-Batch 6\\Helpers\\ManageDriver.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAxwBAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T07:41:13.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommonMethods.cs",
+              "DocumentMoniker": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Helpers\\CommonMethods.cs",
+              "RelativeDocumentMoniker": "HerfaTest-Batch 6\\Helpers\\CommonMethods.cs",
+              "ToolTip": "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Helpers\\CommonMethods.cs",
+              "RelativeToolTip": "HerfaTest-Batch 6\\Helpers\\CommonMethods.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T07:42:08.477Z",
               "EditorCaption": ""
             }
           ]
