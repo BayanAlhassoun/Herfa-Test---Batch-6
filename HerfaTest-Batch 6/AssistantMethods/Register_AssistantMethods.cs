@@ -1,4 +1,5 @@
-﻿using HerfaTest_Batch_6.Data;
+﻿using Bytescout.Spreadsheet;
+using HerfaTest_Batch_6.Data;
 using HerfaTest_Batch_6.Helpers;
 using System;
 using System.Collections.Generic;
@@ -32,5 +33,24 @@ namespace HerfaTest_Batch_6.AssistantMethods
             }
             register_POM.ClickSubmitButton1();
         }
+
+        public static User ReadRegisterDataFromExcel(int row)
+        {
+            Worksheet registerWorkSheet = CommonMethods.ReadExcel("Register");
+
+            User user = new User();
+            user.FirstName = Convert.ToString(registerWorkSheet.Cell(row, 2).Value);
+            user.LastName = (string)registerWorkSheet.Cell(row, 3).Value;
+            user.Email = (string)registerWorkSheet.Cell(row, 4).Value;
+            user.Phone = Convert.ToString(registerWorkSheet.Cell(row, 5).Value);
+            user.BirthDate = Convert.ToString(registerWorkSheet.Cell(row, 7).Value);
+            user.Password = Convert.ToString(registerWorkSheet.Cell(row, 8).Value);
+            user.ConfirmPassword = Convert.ToString(registerWorkSheet.Cell(row, 9).Value);
+            user.image = Convert.ToString(registerWorkSheet.Cell(row, 9).Value);
+            user.Gender = (Gender)Enum.Parse(typeof(Gender), (string)registerWorkSheet.Cell(row, 6).Value);
+            return user;
+        }
+
+
     }
 }

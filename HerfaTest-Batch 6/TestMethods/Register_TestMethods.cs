@@ -10,6 +10,7 @@ using TestProject1.POM;
 using HerfaTest_Batch_6.Helpers;
 using OpenQA.Selenium.DevTools.V130.Browser;
 using HerfaTest_Batch_6.AssistantMethods;
+using Bytescout.Spreadsheet;
 
 namespace HerfaTest_Batch_6.TestMethods
 {
@@ -23,7 +24,8 @@ namespace HerfaTest_Batch_6.TestMethods
             ManageDriver.MaximizeDriver();
             CommonMethods.NavigateToURL(GlobalConstant.registerLink);
             Thread.Sleep(7000);
-            User user = new User("Bayan", "Mohammad", "Bayan@gmail.com", "123", "123", "0783545455", "01-01-1999", Gender.Female);
+
+            User user = Register_AssistantMethods.ReadRegisterDataFromExcel(2);
             Register_AssistantMethods.FillRegisterForm(user);
 
 
@@ -40,7 +42,7 @@ namespace HerfaTest_Batch_6.TestMethods
             ManageDriver.MaximizeDriver();
             CommonMethods.NavigateToURL(GlobalConstant.registerLink);
             Thread.Sleep(7000);
-            User user = new User("Bayan", "Mohammad", "Bayan@gmail.com", "123", "1234", "0783545455", "01-01-1999", Gender.Female);
+             User user = Register_AssistantMethods.ReadRegisterDataFromExcel(9);
             Register_AssistantMethods.FillRegisterForm(user);
 
             string expectedText = "bad";
@@ -68,7 +70,7 @@ namespace HerfaTest_Batch_6.TestMethods
 
         }
 
-
+       
      
 }
 }

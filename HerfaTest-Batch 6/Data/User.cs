@@ -29,5 +29,6 @@ namespace HerfaTest_Batch_6.Data
         public string Phone { get; set; }
         public string BirthDate { get; set; }
         public Gender? Gender { get; set; }
+        public string image { get; set; }
     }
 }

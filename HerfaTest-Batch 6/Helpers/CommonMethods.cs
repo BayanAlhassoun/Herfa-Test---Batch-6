@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using Bytescout.Spreadsheet;
+using HerfaTest_Batch_6.Data;
+using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,5 +22,14 @@ namespace HerfaTest_Batch_6.Helpers
             Thread.Sleep(1000);
             javaScriptExecutor.ExecuteScript("arguments[0].setAttribute('style', 'background: none !important')", element);
         }
+
+        public static Worksheet ReadExcel(string sheetName)//Login
+        {
+            Spreadsheet Excel = new Spreadsheet();
+            Excel.LoadFromFile(GlobalConstant.HerfaTestDataPath);
+           Worksheet worksheet = Excel.Workbook.Worksheets.ByName(sheetName);
+            return worksheet;
+        }
+
     }
 }

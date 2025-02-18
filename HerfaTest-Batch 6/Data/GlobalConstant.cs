@@ -10,5 +10,6 @@ namespace HerfaTest_Batch_6.Data
     {
         public readonly static string loginLink = "https://localhost:44349/Auth/login";
         public readonly static string registerLink = "https://localhost:44349/Auth/RegisterUser";
+        public readonly static string HerfaTestDataPath = "C:\\Users\\b.alhassoun.ext\\Documents\\HerfaTestData.xlsx";
     }
 }
