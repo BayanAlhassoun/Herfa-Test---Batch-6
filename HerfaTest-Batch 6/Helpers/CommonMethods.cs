@@ -23,7 +23,7 @@ namespace HerfaTest_Batch_6.Helpers
             javaScriptExecutor.ExecuteScript("arguments[0].setAttribute('style', 'background: none !important')", element);
         }
 
-        public static Worksheet ReadExcel(string sheetName)//Login
+        public static Worksheet ReadExcel(string sheetName)//Register
         {
             Spreadsheet Excel = new Spreadsheet();
             Excel.LoadFromFile(GlobalConstant.HerfaTestDataPath);

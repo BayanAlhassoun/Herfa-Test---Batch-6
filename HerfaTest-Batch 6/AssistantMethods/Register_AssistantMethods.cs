@@ -1,6 +1,7 @@
 ﻿using Bytescout.Spreadsheet;
 using HerfaTest_Batch_6.Data;
 using HerfaTest_Batch_6.Helpers;
+using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +35,7 @@ namespace HerfaTest_Batch_6.AssistantMethods
             register_POM.ClickSubmitButton1();
         }
 
-        public static User ReadRegisterDataFromExcel(int row)
+        public static User ReadRegisterDataFromExcel(int row) //1
         {
             Worksheet registerWorkSheet = CommonMethods.ReadExcel("Register");
 
@@ -49,6 +50,22 @@ namespace HerfaTest_Batch_6.AssistantMethods
             user.image = Convert.ToString(registerWorkSheet.Cell(row, 9).Value);
             user.Gender = (Gender)Enum.Parse(typeof(Gender), (string)registerWorkSheet.Cell(row, 6).Value);
             return user;
+        }
+
+
+        public static bool CheckSuccessRegister(string email)
+        {
+            bool isUserExist = false;
+
+            OracleConnection oracleConnection = new OracleConnection(GlobalConstant.ConnectionString);
+            oracleConnection.Open();
+
+            string query = "select count(*) from login_fp where email = :value";
+            OracleCommand command = new OracleCommand(query, oracleConnection);
+            command.Parameters.Add(new OracleParameter(":value", email));
+            int result = Convert.ToInt32(command.ExecuteScalar()); // 0 or 1
+            isUserExist = result > 0;
+            return isUserExist;
         }
 
 

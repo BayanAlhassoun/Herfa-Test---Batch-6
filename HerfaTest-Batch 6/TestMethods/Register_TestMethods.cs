@@ -29,10 +29,7 @@ namespace HerfaTest_Batch_6.TestMethods
             Register_AssistantMethods.FillRegisterForm(user);
 
 
-            string expectedURL = GlobalConstant.loginLink;
-            string actualURL = ManageDriver.driver.Url;
-
-            Assert.AreEqual(actualURL, expectedURL);
+            Assert.IsTrue(Register_AssistantMethods.CheckSuccessRegister(user.Email));
             Console.WriteLine("Test Case completed Successfully");
         }
 
@@ -70,7 +67,90 @@ namespace HerfaTest_Batch_6.TestMethods
 
         }
 
-       
-     
-}
+        [TestMethod]
+        public void TestRegister_InvalidEmail()
+        {
+            ManageDriver.MaximizeDriver();
+            Thread.Sleep(7000);
+            for (int i = 3; i <= 5; i++)
+            {
+                try
+                {
+                    CommonMethods.NavigateToURL(GlobalConstant.registerLink);
+
+
+                    User user = Register_AssistantMethods.ReadRegisterDataFromExcel(i);
+
+                    Register_AssistantMethods.FillRegisterForm(user);
+
+                    string expectedURL = GlobalConstant.registerLink;  // Register
+                    string actualURL = ManageDriver.driver.Url; // Login
+                    Assert.AreEqual(actualURL, expectedURL);// not equal => Exception / stop the program
+                    Console.WriteLine("The Test Case has been completed successfully");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
+          
+
+        }
+        [TestMethod]
+        public void TestRegister_InvalidBirthDate()
+        {
+            ManageDriver.MaximizeDriver();
+
+            for (int i = 6; i <= 8; i++) // i=8
+            {
+                try
+                {
+
+              
+                CommonMethods.NavigateToURL(GlobalConstant.registerLink);
+                Thread.Sleep(7000);
+
+
+                User user = Register_AssistantMethods.ReadRegisterDataFromExcel(i); //7
+                Register_AssistantMethods.FillRegisterForm(user);
+
+                    switch (i) // 7
+                    {
+                        case 6:
+                            string expectedValidation = "the age can't be in the future";
+                            string actualValidation = ManageDriver.driver.FindElement(By.XPath("ul/li")).Text; ;
+
+                            Assert.AreEqual(expectedValidation, actualValidation);
+                            Console.WriteLine($"Test Case {i} completed Successfully");
+                            break;
+                        case 7:
+                            string expectedValidation2 = "the age under the legal age";
+                            string actualValidation2 = ManageDriver.driver.FindElement(By.XPath("ul/li")).Text;
+
+                            Assert.AreEqual(expectedValidation2, actualValidation2);
+                            Console.WriteLine($"Test Case {i} completed Successfully");
+                            break;
+
+                        case 8:
+                            string expectedURL = GlobalConstant.registerLink;
+                            string actualURL = ManageDriver.driver.Url;
+
+                            Assert.AreEqual(expectedURL, actualURL);
+                            Console.WriteLine($"Test Case {i} completed Successfully");
+                            break;
+                        default:
+                            break;
+                    }
+                  
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+            }
+            
+        }
+
+    }
 }

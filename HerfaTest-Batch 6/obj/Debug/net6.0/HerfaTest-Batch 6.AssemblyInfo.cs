@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HerfaTest-Batch 6")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+babff2dd73f69294dd69c7fb90d5cbabc0d65bed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9ae4344d62f13ce9bc3e007f80b424e323ed02e")]
 [assembly: System.Reflection.AssemblyProductAttribute("HerfaTest-Batch 6")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HerfaTest-Batch 6")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
