@@ -11,48 +11,93 @@ using HerfaTest_Batch_6.Helpers;
 using OpenQA.Selenium.DevTools.V130.Browser;
 using HerfaTest_Batch_6.AssistantMethods;
 using Bytescout.Spreadsheet;
+using AventStack.ExtentReports;
+using AventStack.ExtentReports.Reporter;
+using AventStack.ExtentReports.Model;
 
 namespace HerfaTest_Batch_6.TestMethods
 {
     [TestClass]
     public class Register_TestMethods
     {
+        public static ExtentReports extentReports = new ExtentReports();
+        public static ExtentHtmlReporter reporter = new ExtentHtmlReporter(GlobalConstant.HTMLReportPath);
+
+        [ClassInitialize]
+        public static void ClassInitialize(TestContext testContext)
+        {
+            extentReports.AttachReporter(reporter);
+            ManageDriver.MaximizeDriver();
+
+        }
+
+
+        [ClassCleanup]
+        public static void ClassCleanup()
+        {
+            extentReports.Flush();
+            ManageDriver.CloseDriver();
+
+        }
 
         [TestMethod]
         public void TestRegister_validData()
         {
-            ManageDriver.MaximizeDriver();
-            CommonMethods.NavigateToURL(GlobalConstant.registerLink);
-            Thread.Sleep(7000);
+            var test = extentReports.CreateTest("Test Success Register", "verify that on adding valid data to the register Form, the data should be added successfully to the database");
+            try
+            {
+                CommonMethods.NavigateToURL(GlobalConstant.registerLink);
+                Thread.Sleep(7000);
 
-            User user = Register_AssistantMethods.ReadRegisterDataFromExcel(2);
-            Register_AssistantMethods.FillRegisterForm(user);
+                User user = Register_AssistantMethods.ReadRegisterDataFromExcel(2); // DDT
+                Register_AssistantMethods.FillRegisterForm(user);
 
 
-            Assert.IsTrue(Register_AssistantMethods.CheckSuccessRegister(user.Email));
-            Console.WriteLine("Test Case completed Successfully");
+                Assert.IsTrue(Register_AssistantMethods.CheckSuccessRegister(user.Email));
+                Console.WriteLine("Test Case completed Successfully");
+                test.Pass("Test Case completed Successfully");
+            }
+            catch (Exception ex)
+            {
+                test.Fail(ex.Message);
+                string screenShotPath = CommonMethods.TakeScreenShot();
+                test.AddScreenCaptureFromPath(screenShotPath);  
+            }
         }
 
         [TestMethod]
         public void TestRegister_ConfirmationPassword()
         {
-            ManageDriver.MaximizeDriver();
-            CommonMethods.NavigateToURL(GlobalConstant.registerLink);
-            Thread.Sleep(7000);
-             User user = Register_AssistantMethods.ReadRegisterDataFromExcel(9);
-            Register_AssistantMethods.FillRegisterForm(user);
+            var test = extentReports.CreateTest("title", "description");
 
-            string expectedText = "bad";
-            string actualText = ManageDriver.driver.FindElement(By.XPath("//div/span[@id='confirmMessage']")).Text;
-            
-            Assert.AreEqual(expectedText, actualText);
-            Console.WriteLine("Test Case Completed Successfully");
+            try
+            {
+
+                CommonMethods.NavigateToURL(GlobalConstant.registerLink);
+                Thread.Sleep(7000);
+                User user = Register_AssistantMethods.ReadRegisterDataFromExcel(9);
+                Register_AssistantMethods.FillRegisterForm(user);
+
+                string expectedText = "bad";
+                string actualText = ManageDriver.driver.FindElement(By.XPath("//div/span[@id='confirmMessage']")).Text;
+
+                Assert.AreEqual(expectedText, actualText);
+                Console.WriteLine("Test Case Completed Successfully");
+                test.Pass("Test Case Completed Successfully");
+            }
+            catch(Exception ex)
+            {
+                test.Fail(ex.Message);
+                string screenShotPath = CommonMethods.TakeScreenShot();
+                test.AddScreenCaptureFromPath(screenShotPath);
+            }
         }
+        
+        
 
         [TestMethod]
         public void TestRegister_InvalidPhoneNumber()
         {
-            ManageDriver.MaximizeDriver();
             CommonMethods.NavigateToURL(GlobalConstant.registerLink);
             Thread.Sleep(7000);
 
@@ -70,7 +115,6 @@ namespace HerfaTest_Batch_6.TestMethods
         [TestMethod]
         public void TestRegister_InvalidEmail()
         {
-            ManageDriver.MaximizeDriver();
             Thread.Sleep(7000);
             for (int i = 3; i <= 5; i++)
             {
@@ -100,7 +144,6 @@ namespace HerfaTest_Batch_6.TestMethods
         [TestMethod]
         public void TestRegister_InvalidBirthDate()
         {
-            ManageDriver.MaximizeDriver();
 
             for (int i = 6; i <= 8; i++) // i=8
             {

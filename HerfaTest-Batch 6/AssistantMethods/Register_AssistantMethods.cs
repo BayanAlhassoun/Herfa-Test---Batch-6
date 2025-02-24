@@ -53,9 +53,8 @@ namespace HerfaTest_Batch_6.AssistantMethods
         }
 
 
-        public static bool CheckSuccessRegister(string email)
+        public static bool CheckSuccessRegister(string email)//Raghad32@gmail.com
         {
-            bool isUserExist = false;
 
             OracleConnection oracleConnection = new OracleConnection(GlobalConstant.ConnectionString);
             oracleConnection.Open();
@@ -64,7 +63,7 @@ namespace HerfaTest_Batch_6.AssistantMethods
             OracleCommand command = new OracleCommand(query, oracleConnection);
             command.Parameters.Add(new OracleParameter(":value", email));
             int result = Convert.ToInt32(command.ExecuteScalar()); // 0 or 1
-            isUserExist = result > 0;
+            bool isUserExist = result > 0;
             return isUserExist;
         }
 

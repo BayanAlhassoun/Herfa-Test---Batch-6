@@ -31,5 +31,15 @@ namespace HerfaTest_Batch_6.Helpers
             return worksheet;
         }
 
+        public static string TakeScreenShot()
+        {
+            ITakesScreenshot takesScreenshot= (ITakesScreenshot) ManageDriver.driver;
+            Screenshot screenshot= takesScreenshot.GetScreenshot();
+            string path = "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Data\\Images";
+            string imageName = Guid.NewGuid().ToString() + "_image.png"; // 2145625-2722-2872-2729-268682372139_image.png
+            string fullPath = Path.Combine(path + $"\\{imageName}");// "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Data\\Images\\2145625-2722-2872-2729-268682372139_image.png
+            screenshot.SaveAsFile(fullPath);
+            return fullPath;
+        }
     }
 }
