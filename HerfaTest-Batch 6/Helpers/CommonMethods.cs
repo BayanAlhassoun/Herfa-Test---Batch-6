@@ -1,6 +1,7 @@
 ﻿using Bytescout.Spreadsheet;
 using HerfaTest_Batch_6.Data;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -40,6 +41,19 @@ namespace HerfaTest_Batch_6.Helpers
             string fullPath = Path.Combine(path + $"\\{imageName}");// "C:\\Users\\b.alhassoun.ext\\source\\repos\\HerfaTest-Batch 6\\HerfaTest-Batch 6\\Data\\Images\\2145625-2722-2872-2729-268682372139_image.png
             screenshot.SaveAsFile(fullPath);
             return fullPath;
+        }
+
+
+        public static IWebElement WaitAndFindElement(By by)//By.XPath("//div/input[@id='Fname']");
+        {
+            var waiting = new DefaultWait<IWebDriver>(ManageDriver.driver)
+            {
+                Timeout = TimeSpan.FromSeconds(10),
+                PollingInterval = TimeSpan.FromMilliseconds(500),
+            };
+            waiting.IgnoreExceptionTypes(typeof(NoSuchElementException));
+            IWebElement element = waiting.Until(x => x.FindElement(by));
+            return element;
         }
     }
 }

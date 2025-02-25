@@ -30,7 +30,7 @@ namespace TestProject1.POM
 
         public void EnterFirstName(string value)
         {
-            IWebElement element = _webDriver.FindElement(fname);
+            IWebElement element = CommonMethods.WaitAndFindElement(fname);
 
             CommonMethods.Highlightelement(element);
             element.SendKeys(value);
@@ -38,12 +38,12 @@ namespace TestProject1.POM
 
         public void EnterLastName(string value)
         {
-            IWebElement element = _webDriver.FindElement(lname);
+            IWebElement element = CommonMethods.WaitAndFindElement(lname);
             element.SendKeys(value);
         }
         public void MaleButton()
         {
-            IWebElement element = _webDriver.FindElement(genderMale);
+            IWebElement element = CommonMethods.WaitAndFindElement(genderMale);
             element.Click();
         }
 
